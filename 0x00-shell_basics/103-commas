@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -pd * | paste -sd ',' - ; echo
+ls -pd * .[^.]* | tr '\n' ',' | sed 's/,$/\n/'
