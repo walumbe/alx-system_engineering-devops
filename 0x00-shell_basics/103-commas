@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -dp | sort -d | tr '\n' ','
+ls -pd * | paste -sd ',' - ; echo
